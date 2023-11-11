@@ -4,7 +4,14 @@ html(lang="en")
     meta(charset="UTF-8") 
     meta(http-equiv="X-UA-Compatible", content="IE=edge") 
     meta(name="viewport", content="width=device-width, initial-scale=1.0") 
-    title #{title} 
+    block metas
+      title Page title 
+      meta(name='description', content='Some description') 
+    link(rel="icon", href="favicon.ico")
+    link(rel="icon", href="icon.svg", type="image/svg+xml")
+    link(rel="apple-touch-icon", href="apple-touch-icon.png")
+    link(rel="manifest", href="manifest.webmanifest")
+    meta(name="theme-color", content="#FFF")
   body 
     // HEADER
     include includes/_header.pug 

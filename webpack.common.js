@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -15,6 +16,16 @@ module.exports = {
       filename: "page.html",
       template: "./src/templates/page.pug",
       chunks: ["page"],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "./src/root-files/favicon.ico" },
+        { from: "./src/root-files/icon.svg" },
+        { from: "./src/root-files/icon-192.png" },
+        { from: "./src/root-files/icon-512.png" },
+        { from: "./src/root-files/apple-touch-icon.png" },
+        { from: "./src/root-files/manifest.webmanifest" },
+      ],
     }),
   ],
   module: {
