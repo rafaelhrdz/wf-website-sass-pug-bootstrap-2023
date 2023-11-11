@@ -34,7 +34,7 @@ module.exports = merge(common, {
           //For production images will preserve original folder structure
           filename: (content) => {
             //console.log(content);
-            //Remove 'src/assets/' from the filename
+            //Remove 'src/assets/' from the filename. To add a hash chain another replace() and replace '.' with 'hash.'
             return content.filename.replace("src/assets/", "");
           },
         },

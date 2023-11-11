@@ -56,3 +56,10 @@ h4 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
+
+//Unused css to test purgecss
+.gold-box {
+  background-color: gold;
+  width: 500px;
+  height: 500px;
+}
