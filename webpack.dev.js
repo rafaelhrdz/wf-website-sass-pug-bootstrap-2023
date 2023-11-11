@@ -8,6 +8,18 @@ module.exports = merge(common, {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: "style-loader" }, //3. Inject styles into DOM
+          { loader: "css-loader" }, //2. Turn css into commonjs
+          { loader: "sass-loader" }, //1. Turn sass into css
+        ],
+      },
+    ],
+  },
   devServer: {
     //Without hot module replacement enabled
     hot: false,
