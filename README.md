@@ -26,6 +26,6 @@ css tricks has an article from May 2021 about autoprefixing:
 
 [Is vendor prefixing dead](https://css-tricks.com/is-vendor-prefixing-dead/)
 
-### Browserlist
+### Transpiling
 
-The values used on the browserlist property are from Bootstrap 5. This should be analyzed in a per project basis.
+Use "ie 11" in the browserslist to test that the ES6 code is transpiled to vanilla ES5 javascript
