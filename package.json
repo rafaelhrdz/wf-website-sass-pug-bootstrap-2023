@@ -10,11 +10,17 @@
   },
   "author": "Rafael Hernandez",
   "license": "ISC",
+  "browserslist": [
+    "defaults and supports es6-module"
+  ],
   "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "browserslist": "^4.22.1",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
+    "postcss-loader": "^7.3.3",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
     "simple-pug-loader": "^0.2.1",

@@ -13,8 +13,9 @@ module.exports = merge(common, {
       {
         test: /\.scss$/,
         use: [
-          { loader: "style-loader" }, //3. Inject styles into DOM
-          { loader: "css-loader" }, //2. Turn css into commonjs
+          { loader: "style-loader" }, //4. Inject styles into DOM
+          { loader: "css-loader" }, //3. Turn css into commonjs
+          { loader: "postcss-loader" }, //2. Run postcss actions i.e. autoprefixer
           { loader: "sass-loader" }, //1. Turn sass into css
         ],
       },
