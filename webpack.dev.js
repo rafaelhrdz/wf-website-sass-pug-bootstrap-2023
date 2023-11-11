@@ -4,7 +4,7 @@ const { merge } = require("webpack-merge");
 
 module.exports = merge(common, {
   mode: "development",
-  devtool: "eval",
+  devtool: "inline-source-map",
   output: {
     filename: "js/[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
@@ -21,10 +21,10 @@ module.exports = merge(common, {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif)$/,
+        test: /\.(png|jpe?g)$/,
         type: "asset/resource",
         generator: {
-          filename: "img/[name]-[hash][ext][query]",
+          filename: "img/[name][ext]",
         },
       },
       {

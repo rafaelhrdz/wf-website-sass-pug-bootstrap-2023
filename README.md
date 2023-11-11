@@ -1,6 +1,22 @@
 # Website Development workflow with sass and pug
 
-## Development notes
+This webpack 5 boilerplate is to create optimized multi page websites using pug templates and sass
+
+## Features
+
+- Live reload
+- Sass processing
+- Automatic removal of unused CSS using purgecss
+- Automatic prefixing
+- Jpeg, png and gif optimization
+- SVG optimization with inlining when the file is smaller than 8k
+- JS transpiling through babel
+- Polyfills using core-js and regenerator-runtime(async)
+- Source maps for js and css files
+- Templates through pug
+- Locally hosted fonts processing
+
+# Development notes
 
 ### PostCSS and autoprefixer
 
