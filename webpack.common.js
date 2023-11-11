@@ -5,18 +5,18 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "./src/index.html",
+      template: "./src/templates/index.pug",
     }),
     new HtmlWebpackPlugin({
       filename: "page.html",
-      template: "./src/page.html",
+      template: "./src/templates/page.pug",
     }),
   ],
   module: {
     rules: [
       {
-        test: /\.html$/,
-        use: ["html-loader"],
+        test: /\.pug$/,
+        use: ["simple-pug-loader"],
       },
     ],
   },
