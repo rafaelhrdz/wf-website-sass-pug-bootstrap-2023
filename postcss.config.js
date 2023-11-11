@@ -1,10 +1,18 @@
 const purgecss = require("@fullhuman/postcss-purgecss");
 
-module.exports = {
-  plugins: [
-    require("autoprefixer"), //Using browserslist on package.json
-    purgecss({
-      content: ["**/*.html"],
-    }),
-  ],
+//Run purgecss only during production
+module.exports = (ctx) => {
+  //console.log(ctx);
+  return {
+    plugins: [
+      require("autoprefixer"),
+      ...(ctx.env === "production"
+        ? [
+            purgecss({
+              content: ["**/*.pug"],
+            }),
+          ]
+        : []),
+    ],
+  };
 };

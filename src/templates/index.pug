@@ -8,7 +8,6 @@ block content
   main.main 
     h1 Home
     p Some text 
-    p Second paragraph
 
     //- Combining pug template with regular html
     <div>
@@ -25,7 +24,11 @@ block content
 
     h2 Jpeg images
     img(src=require('../assets/images/coffee.jpg'), alt="coffee")
-    img(src=require('../assets/images/chichen.jpg'), alt="chichen")
+
+    .bg-image-box 
+      h2 BG Image box 
+      p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est aspernatur vitae nisi error illo voluptatibus ipsum eius beatae! Adipisci temporibus ab incidunt iste, cum nostrum asperiores cumque fugit quas! Dicta.
+
     p Image inside a folder
     img(src=require('../assets/images/cars/sports-car.jpg'), alt="")
 
@@ -36,3 +39,7 @@ block content
     img(src=require('../assets/svgs/gas.svg'), alt="", width=200 height=200)
     img(src=require('../assets/svgs/icon-flag.svg'), alt="" width=200 height=200)
     img(src=require('../assets/svgs/logo.svg'), alt="" width=200 height=200)
+
+    h2 Tests 
+    .tomato-box
+      p tomato box

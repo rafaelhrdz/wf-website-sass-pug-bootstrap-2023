@@ -43,3 +43,15 @@ import 'regenerator-runtime/runtime';
 
 Good, brief explantion of polyfills and transpilers
 [transpiling and polyfills](https://javascript.info/polyfills)
+
+### PurgeCSS
+
+I modified the postcss.config.js file to run purgecss only during production. This solves a problem where changes were not being updated during development because purgecss was removing styles in the background and it's better for performance specially for larger projects.
+
+I found this solution in a github repository but it was out of date. I had to console.log(ctx) to see the current version of that variable and test for the prover environment when set to production
+
+### Github repository for reference
+
+I found a repository which does something similar. It's no longer supported but it helped me solve the problem I had with purgecss
+
+[tirs webpack boilerplate](https://github.com/tr1s/tris-webpack-boilerplate)

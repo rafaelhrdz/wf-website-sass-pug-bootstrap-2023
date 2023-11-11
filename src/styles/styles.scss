@@ -63,3 +63,18 @@ h4 {
   width: 500px;
   height: 500px;
 }
+
+.bg-image-box {
+  border: 1px solid lightgray;
+  height: 400px;
+  width: 400px;
+  padding: 1rem;
+  background: url("../assets/images/chichen.jpg");
+}
+
+//Style to be removed by purgecss. Note from previous repository. It's not removed. Maybe I removed the element manually and that's how I was doing tests. The implementation of this commit seems to be working fine. Leaving it just in case.
+.tomato-box {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+}
