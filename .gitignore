@@ -32,6 +32,9 @@ dist/
 src/assets/images/*
 src/assets/svgs/*
 
+#We don't want to keep the fonts in the repository in case we use commercial fonts
+src/assets/fonts/*
+
 # ignore favicon files in root of src folder
 src/root-files/*.png
 src/root-files/*.ico
