@@ -40,3 +40,6 @@ import 'regenerator-runtime/runtime';
 ```
 
 [core-js documentation](https://github.com/zloirock/core-js/blob/master/README.md)
+
+Good, brief explantion of polyfills and transpilers
+[transpiling and polyfills](https://javascript.info/polyfills)
