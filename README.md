@@ -16,6 +16,12 @@ npx browserslist@latest --update-db
 
 NOTE: Be careful with the very common typo of naming browserslist as browserlist. This will not install the proper package. Previous version of this workflow has this problem.
 
+[autoprefixer documentation](https://github.com/postcss/autoprefixer)
+
+[browserslist documentation](https://browsersl.ist/)
+
+[browserslist github](https://github.com/browserslist/browserslist)
+
 css tricks has an article from May 2021 about autoprefixing:
 
 [Is vendor prefixing dead](https://css-tricks.com/is-vendor-prefixing-dead/)

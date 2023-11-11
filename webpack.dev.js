@@ -19,6 +19,17 @@ module.exports = merge(common, {
           { loader: "sass-loader" }, //1. Turn sass into css
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "img/[name]-[hash][ext][query]",
+        },
+      },
+      {
+        test: /\.svg/,
+        type: "asset/inline",
+      },
     ],
   },
   devServer: {

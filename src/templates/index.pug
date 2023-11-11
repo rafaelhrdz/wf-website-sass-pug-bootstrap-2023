@@ -5,6 +5,7 @@ block content
     h1 Home
     p Some text 
     p Second paragraph
+
     //- Combining pug template with regular html
     <div>
       <p>Some text in main</p>
@@ -17,3 +18,17 @@ block content
 
     .example-container 
       span.box-decoration-box this text will break in multiple lines through css
+
+    h2 Jpeg images
+    img(src=require('../assets/images/coffee.jpg'), alt="coffee")
+    img(src=require('../assets/images/chichen.jpg'), alt="chichen")
+    p Image inside a folder
+    img(src=require('../assets/images/cars/sports-car.jpg'), alt="")
+
+    h2 Png images 
+    img(src=require('../assets/images/laptop.png'), alt="")
+
+    h2 SVGS images 
+    img(src=require('../assets/svgs/gas.svg'), alt="", width=200 height=200)
+    img(src=require('../assets/svgs/icon-flag.svg'), alt="" width=200 height=200)
+    img(src=require('../assets/svgs/logo.svg'), alt="" width=200 height=200)
