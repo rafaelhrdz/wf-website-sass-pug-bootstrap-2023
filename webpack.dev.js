@@ -8,4 +8,12 @@ module.exports = merge(common, {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
+  devServer: {
+    //Without hot module replacement enabled
+    hot: false,
+    liveReload: true,
+    //With Hot module replacement enabled
+    //liveReload: true,
+    //watchFiles: ["src/**/*.html", "dist/**/*"],
+  },
 });
