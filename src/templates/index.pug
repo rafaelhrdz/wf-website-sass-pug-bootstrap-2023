@@ -5,41 +5,10 @@ block metas
   meta(name='description', content='Description for home')
 
 block content 
-  main.main 
-    h1 Home
-    p Some text 
-
-    //- Combining pug template with regular html
-    <div>
-      <p>Some text in main</p>
-      <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-      </ul>
-    </div>
-
-    .example-container 
-      span.box-decoration-box this text will break in multiple lines through css
-
-    h2 Jpeg images
-    img(src=require('../assets/images/coffee.jpg'), alt="coffee")
-
-    .bg-image-box 
-      h2 BG Image box 
-      p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est aspernatur vitae nisi error illo voluptatibus ipsum eius beatae! Adipisci temporibus ab incidunt iste, cum nostrum asperiores cumque fugit quas! Dicta.
-
-    p Image inside a folder
-    img(src=require('../assets/images/cars/sports-car.jpg'), alt="")
-
-    h2 Png images 
-    img(src=require('../assets/images/laptop.png'), alt="")
-
-    h2 SVGS images 
-    img(src=require('../assets/svgs/gas.svg'), alt="", width=200 height=200)
-    img(src=require('../assets/svgs/icon-flag.svg'), alt="" width=200 height=200)
-    img(src=require('../assets/svgs/logo.svg'), alt="" width=200 height=200)
-
-    h2 Tests 
-    .tomato-box
-      p tomato box
+  div.px-4.py-5.my-5.text-center
+    h1.display-5.fw-bold Home
+    div.col-lg-6.mx-auto
+      p.lead.mb-4 Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+      div.d-grid.gap-2.d-sm-flex.justify-content-sm-center
+        button.btn.btn-primary.btn-lg.px-4.gap-3(type="button") Primary button
+        button.btn.btn-outline-secondary.btn-lg.px-4(type="button") Secondary

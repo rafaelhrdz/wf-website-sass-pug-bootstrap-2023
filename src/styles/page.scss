@@ -1,5 +1,2 @@
-$color: lightgreen;
-
-body {
-  background-color: $color;
-}
+@import "~bootstrap/scss/bootstrap";
+@import "custom";

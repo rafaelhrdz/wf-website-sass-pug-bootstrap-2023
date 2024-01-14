@@ -1,9 +1,10 @@
-# Website Development workflow with sass and pug
+# Website Development workflow with sass and pug. Configured with Bootstrap 5
 
 This webpack 5 boilerplate is to create optimized multi page websites using pug templates and sass
 
 ## Features
 
+- Bootstrap 5
 - Live reload
 - Sass processing
 - Automatic removal of unused CSS using purgecss

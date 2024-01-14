@@ -1,5 +1,28 @@
-ul.navigation 
-  li 
-    a(href="index.html") Home 
-  li 
-    a(href="page.html") Page 
+header.py-3.border-bottom
+  .container.d-flex.flex-wrap.justify-content-center
+    a(href="index.html" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none")  
+      span.fs-4 Bootstrap Site
+    form.col-12.col-lg-auto.mb-3.mb-lg-0
+      input(type="search",class="form-control" placeholder="Search..." aria-label="Search")
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark(aria-label="Tenth navbar example")
+  .container-fluid
+    button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarsExample08", aria-controls="navbarsExample08", aria-expanded="false", aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+    .collapse.navbar-collapse.justify-content-md-center#navbarsExample08
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link.active(aria-current="page", href="#") Centered nav only
+        li.nav-item
+          a.nav-link(href="/page.html") Page
+        li.nav-item
+          a.nav-link.disabled(href="#", tabindex="-1", aria-disabled="true") Disabled
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#", id="dropdown08", data-bs-toggle="dropdown", aria-expanded="false") Dropdown
+          ul.dropdown-menu(aria-labelledby="dropdown08")
+            li
+              a.dropdown-item(href="#") Action
+            li
+              a.dropdown-item(href="#") Another action
+            li
+              a.dropdown-item(href="#") Something else here

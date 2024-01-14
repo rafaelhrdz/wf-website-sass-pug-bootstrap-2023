@@ -2,9 +2,13 @@ extends layout
 
 block metas 
   title Home 
-  meta(name='description', content='Description for page')
+  meta(name='description', content='Description for home')
 
 block content 
-  main.main 
-    h1 Page One 
-    p This is a paragraph. More content. and more.
+  div.px-4.py-5.my-5.text-center
+    h1.display-5.fw-bold Page from additional pug template
+    div.col-lg-6.mx-auto
+      p.lead.mb-4 Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+      div.d-grid.gap-2.d-sm-flex.justify-content-sm-center
+        button.btn.btn-primary.btn-lg.px-4.gap-3(type="button") Primary button
+        button.btn.btn-outline-secondary.btn-lg.px-4(type="button") Secondary
